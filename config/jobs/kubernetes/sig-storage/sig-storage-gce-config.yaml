@@ -234,7 +234,7 @@ presubmits:
         - --ginkgo-parallel=30
         - --runtime-config=batch/v2alpha1=true
         - --stage=gs://kubernetes-release-pull/ci/pull-kubernetes-e2e-gce-iscsi
-        - --test_args=--ginkgo.focus=\[Driver:.iscsi\] --ginkgo.skip=\[Serial\]|\[Disruptive\]|\[Flaky\] --minStartupPods=8
+        - --test_args=--ginkgo.focus=\[Driver:.iscsi --ginkgo.skip=\[Serial\]|\[Disruptive\]|\[Flaky\] --minStartupPods=8
         - --timeout=120m
         image: gcr.io/k8s-testimages/kubekins-e2e:v20200602-c1964ea-master
         resources:
